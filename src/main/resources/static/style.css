@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu", sans-serif;
+
+}
+.loader{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.text-main{
+    color: #203890;
+}
+.text-red{
+    color: red;
+}
+.bg-main{
+    background-color: #203890;
+}
+.bg-red{
+    background-color: red;
+}
+.custom-active-nav{
+    background-color: #203890;
+    color: white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 1px;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #203890;
+}
+
+::selection {
+    color: white;
+    background: #203890;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-go{
+    border: 3px solid #203890;
+    color: white;
+    background-color: black;
+}
+.btn-go:hover{
+    background-color: #203890;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+.btn-blue{
+    background-color: #203890;
+}
+.border-blue{
+    border-color: #203890!important;
+}
+#query:hover, #query:focus{
+    box-shadow:none
+}
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    scale: 1.5;
+}
+.input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #ff3f81;
+    padding-right: 40px;
+    color:#fff;
+}
+.input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.btn-search{
+
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;
+}
+.btn-search:focus ~ .input-search{
+    width: 500px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    animation: none!important;
+}
+.input-search:focus{
+    width: 500px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    animation: none!important;
+}
+
+.popup {
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+#myVideo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+}
+@keyframes animate {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(32, 56, 144, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(32, 56, 144, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(32, 56, 144, 0);
+    }
+
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.gifBackground{
+    background-image: url("9vie.gif");
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 42ch;
+    animation: typing 10s steps(42) infinite, blink .5s step-end infinite;
+    animation-delay: 1s; /* Delay before starting typing animation initially */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #203890;
+    margin: 0 auto;
+    padding-right: 2px;
+    font-size: 1.5em;
+    background: linear-gradient(90deg,#ff8d44,#fa1462,#35126a);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 42ch; /* Adjust this to match the width of your text */
+    }
+    100% {
+        width: 0; /* Return to start to create the pause effect */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+

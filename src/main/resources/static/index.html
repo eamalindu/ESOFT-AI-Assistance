@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ESOFT AI</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="fontawesome.js"></script>
+    <link href="aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+          type="text/css"/>
+</head>
+<body class="bg-black min-vh-100">
+<div class="d-flex align-items-center justify-content-center" id="test" style="height: 100vh">
+    <div class="text-center" data-aos="fade-up">
+        <img alt="" class="bounceInDown" id="logo" src="logo.png" width="25%">
+        <h2 class="text-white fw-bold mt-2">Celebrating 6-Year Anniversary</h2>
+        <p class="typing-demo">Meet the Game-Changer: ESOFT AI Unleashed! </p>
+        <a class="text-white text-decoration-none" href="#chat">
+            <button class="btn btn-go mt-2" onclick="pauseMusic()"> Discover AI Magic<sup>✨</sup></button>
+        </a>
+    </div>
+</div>
+<div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center" id="chat">
+<!--    <video autoplay muted loop id="myVideo">-->
+<!--        <source src="ai.mp4" type="video/mp4">-->
+<!--    </video>-->
+        <div class="">
+            <div class="search-box mx-auto">
+                <button class="btn-search" id="searchBtn"><i class="fas fa-search"></i></button>
+                <input class="input-search" id="query" placeholder="Type Your Question..." type="text">
+            </div>
+            <img class="d-none d-block position-absolute start-50 mx-auto mt-3" id="loadingGif" src="typing.gif" style="filter: contrast(100)" width="50px">
+            <div class="results mx-auto mt-5 position-relative" id="results">
+
+            </div>
+        </div>
+
+    </div>
+
+<audio id="backgroundMusic" autoplay loop onload="backgroundMusic.volume = 0.1">
+    <source src="background.mp3"  type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="loader" id="loader">
+    <img src="loader.svg" width="100px">
+</div>
+<script src="bootstrap.bundle.js"></script>
+<script src="jquery.js"></script>
+<script src="three.js"></script>
+<script src="vanta.dots.min.js"></script>
+<script src="vanta.globe.min.js"></script>
+<script src="aos.js"></script>
+<script src="initialize.js"></script>
+<script type="text/javascript" src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+<script src="script.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
